@@ -1,0 +1,9 @@
+version: 2
+jobs:
+   build:
+     docker:
+       - image: circleci/php:7.0
+     steps:
+       - checkout
+       - run: echo "hello world"
+       - run: echo "using circle ci"
